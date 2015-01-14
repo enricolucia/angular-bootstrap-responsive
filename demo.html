@@ -1,0 +1,28 @@
+<html ng-app="demo">
+  <head>
+    <title>Bootstrap viewport - Demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h4>Viewport is {{viewport}}</h4>
+        <div ng-switch on="viewport">
+            <div ng-switch-when="visible-xs">Extra small devices (phones, less than 768px)</div>
+            <div ng-switch-when="visible-sm">Small devices (tablets, 768px and up)</div>
+            <div ng-switch-when="visible-md">Medium devices (desktops, 992px and up)</div>
+            <div ng-switch-when="visible-lg">Large devices (large desktops, 1200px and up)</div>
+            <div ng-switch-default>Not defined yet</div>
+        </div>
+        <div bv-mode="viewport"></div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.js"></script>
+    <script src="bootstrap-responsive.js"></script>
+    <script>
+    /*global angular*/
+    var demo = angular.module('demo', ['bootstrap.responsive']);
+    </script>
+  </body>
+</html>
