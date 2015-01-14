@@ -3,5 +3,5 @@
  - Use the predefined visibility helper classes
  - Working also with resize event
 
-demo: http://github.com/enricolucia/angular-bootstrap-responsive
+demo: http://plnkr.co/edit/yOo7ht
 
